@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav id="mySidepanel" class="sidepanel">
+        <ul>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <li class="navbox">
+                <p>
+                    <a href="#home">HOME</a>
+                </p>
+            </li>
+            <li class="navbox">
+                <p><a href="#intenship">INTERNSHIP</a></p>
+            </li>
+            <li class="navbox">
+                <select id="selector1">
+                    <option value="1">Training & development</option>
+                    <option value="2">Technology</option>
+                    <option value="3">Digital marketing</option>
+                    <option value="4">SEO</option>
+                </select>
+            </li>
+            <li id="nav1box1" class="navbox">
+                <input type="text" placeholder="search" id="search">
+                <!-- <input type="button" value="search" id="button"> -->
+                <button id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </li>
+            <li class="navbox">
+                <select id="selector2">
+                    <option value="">PAGES</option>
+                    <option value="2"><a href="#services">Services</a></option>
+                    <option value="3">Portfolio</option>
+                    <option value="4">Pricing</option>
+                    <option value="4">Team Members</option>
+                    <option value="4">Reviews</option>
+                    <option value="4"><a href="#clients">Clients</a></option>
+                    <option value="4">Skills</option>
+                </select>
+            </li>
+
+            <li class="navbox">
+                <p>
+                    <a href="">About</a>
+                </p>
+            </li>
+            <li class="navbox">
+                <p>
+                    <a href="">CONTACT</a>
+                </p>
+            </li>
+        </ul>
+        </ul>
+    </nav>
+    <nav id="nav1">
+        <ul id="navHandler">
+            <li id="navbox1" class="navbox">
+                <img src="mainlogo.png" alt="namrataunivarsal" class="namratalogo">
+            </li>
+            <button id="tpanel" class="openbtn" onclick="openNav()">☰</button>
+
+            <ul id="mySidepanel2" class="sidePanel">
+                <li id="navbox2" class="navbox">
+                    <p>
+                        <a href="#home">HOME</a>
+                    </p>
+                </li>
+                <li id="navbox3" class="navbox">
+                    <p><a href="#intenship">INTERNSHIP</a></p>
+                </li>
+                <li id="navbox4" class="navbox">
+                    <div>
+                        <select id="selector">
+                            <option value="1">Training & development</option>
+                            <option value="2">Technology</option>
+                            <option value="3">Digital marketing</option>
+                            <option value="4">SEO</option>
+                        </select>
+                        <input type="text" placeholder="search" id="search">
+                        <!-- <input type="button" value="search" id="button"> -->
+                        <button id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </li>
+                <li id="navbox5" class="navbox">
+                    <select>
+                        <option value="">PAGES</option>
+                        <option value="2"><a href="#services">Services</a></option>
+                        <option value="3">Portfolio</option>
+                        <option value="4">Pricing</option>
+                        <option value="4">Team Members</option>
+                        <option value="4">Reviews</option>
+                        <option value="4"><a href="#clients">Clients</a></option>
+                        <option value="4">Skills</option>
+                    </select>
+                </li>
+
+                <li id="navbox6" class="navbox">
+                    <p>
+                        <a href="">About</a>
+                    </p>
+                </li>
+                <li id="navbox7" class="navbox">
+                    <p>
+                        <a href="#contact">CONTACT</a>
+                    </p>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+
+    <nav id="nav2">
+        <ul id="nav2box">
+            <li class="navbox">City</li>
+            <li class="navbox">Buy</li>
+            <li class="navbox">Rent</li>
+            <li class="navbox">Projects</li>
+            <li class="navbox">Agents</li>
+            <li class="navbox"><a href="#services">Services</a></li>
+            <li class="navbox">Resources</li>
+        </ul>
+        <div>
+            <button id="login">
+                <p class="navbox">login</p>
+            </button>
+        </div>
+    </nav>
+    <div>
+        <img src="about-goal.jpg" alt="" id="aboutImg">
+    </div>
+    <!-- <div id="aboutComment">
+   <h4>You are on Namrata Univarsal. </h4> 
+  Element to contain animated typing 
+  <h4>we are providing:-&nbsp;</h4>
+  <span id="element"></span>
+  <a href="https://namratauniversal.com/"> Click here to go to namrataunivarsal.in</a> 
+</div> -->
+    <div id="aboutComment2">
+        <h1>About Us</h1>
+        <p>At Namrata Universal We Deliver With Focus On Quality, Integrity And Long Term Relation. We have experienced
+            professionals who understand that IT services is changing, and are true partners who care about your
+            success.</p>
+    </div>
+    <div>
+        <img src="about-story.jpg" alt="welcomeImg" id="welcomeImg">
+    </div>
+    <div id="welcomeSection">
+        <h2>Welcome to the World of Namrata Universal</h2>
+        <p>Trusted by the world's best organizations, for 12 years and running, it has been delivering smiles to
+            hundreds of IT advisors, developers, users, and business owners. Easy solutions for all difficult IT
+            problems to ensure high availability.</p>
+        <p>Our biggest strength is our <b>Global Reach</b>. Our ability to cater to any business segments & needs. Our
+            experience enables us create unique products. High volume of our work makes us provide value added services
+            with wallet friendly charges. Strong ground support and extensive network keeps us always a step a head. We
+            are always on Toes and this attitude has given us a strong presence in Indian Subcontinent.</p>
+    </div>
+    <div id="ourSection" onmouseover="remover1(this)" onmouseout="remover2(this)">
+        <div class="ourSection">
+            <img src="storyImg.jpg" alt="our Story">
+            <img src="goalImg.jpg" alt="our Goal">
+        </div>
+        <div class="ourSection">
+            <div>
+                <h2>Our Story</h2>
+                <p>Namrata Group has been serving clients in diverse fields for over 14 years through <b>Namrata Health
+                        Care Pvt. Ltd, Namrata Wellness, Namrata Store, Sylister Health Care Pvt. Ltd
+                    </b> and <b>
+                        Jingle Holiday Bazar Pvt. Ltd.
+                    </b> Our objective is to take the business of our customers forward through our products and
+                    services. The Namrata Universal is the complete IT Solution Company and we welcome you to the world
+                    of Namrata Universal.</p>
+            </div>
+            <div>
+                <h2>Our Goal</h2>
+                <p>Improve Efficiency And Provide Better Experience By Our IT Solutions!</p>
+                <p>Trusted by the world's best organizations, for 11 years and running, it has been delivering smiles to
+                    hundreds of IT advisors, developers, users, and business owners. Easy solutions for all difficult IT
+                    problems to ensure high availability.
+                    Like <b>Specific, Measureable, Achievable, Realistic, Time-bound.</b> </p>
+            </div>
+        </div>
+    </div>
+    <h1 id="services">Services</h1>
+    <div id="serviceSection" onmouseover="numAdder()">
+        <div class="serviceSection" onmouseover="bigImg1(this) " onmouseout="normalImg1(this)">
+            <div class="servicetext" id="serviceSection1">
+                <h2>Business Portal Development</h2>
+                <p>At Namrata Universal, we offer mobile-compliant Business Portal Development services leveraging a
+                    plethora of frameworks including Drupal, WordPress, Magento, AngularJS and much more.</p>
+                <img src="web1.jpeg" alt="" class="serviceImg" id="serviceImg1">
+            </div>
+        </div>
+        <div class="serviceSection" onmouseover="bigImg2(x) " onmouseout="normalImg2(this)">
+            <div class="servicetext" id="serviceSection2">
+                <h2>Mobile Application Development</h2>
+                <p>We have designed and developed Android apps in categories, and productivity, shopping, social
+                    messaging, gaming and entertainment, news and publishing and so on.</p>
+                <img src="mapd.jpeg" alt="" class="serviceImg" id="serviceImg2">
+            </div>
+        </div>
+        <div class="serviceSection" onmouseover="bigImg3(x)" onmouseout="normalImg3(this)">
+            <div class="servicetext" id="serviceSection3">
+                <h2>Website Development</h2>
+                <p>We create websites that appeal to your sense of style, with intuitive layouts and navigation. We also
+                    ensure that your website is a search engine friendly so that it attracts customers and sales.</p>
+                <img src="webd.jpeg" alt="" class="serviceImg" id="serviceImg3">
+            </div>
+        </div>
+        <div class="serviceSection" onmouseover="bigImg4(x)" onmouseout="normalImg4(this)">
+            <div class="servicetext" id="serviceSection4">
+                <h2>Custom Software</h2>
+                <p>Custom software development is the process of designing, creating, deploying and maintaining software
+                    for a specific set of users, functions. We offer quality and valuable price in our software and
+                    services without sacrificing quality.</p>
+                <img src="cuts.jpeg" alt="" class="serviceImg" id="serviceImg4">
+            </div>
+        </div>
+        <div class="serviceSection" onmouseover="bigImg5(x)" onmouseout="normalImg5(this)">
+            <div class="servicetext" id="serviceSection5">
+                <h2>Graphic Designing</h2>
+                <p>Graphic design is the most common way of making visual content. The specialty of visual communicate
+                    is fundamental, especially for brands looking to connect with their target audience, and graphic
+                    design is the perfect solution.</p>
+                <img src="gd.jpeg" alt="" class="serviceImg" id="serviceImg5">
+            </div>
+        </div>
+        <div class="serviceSection" onmouseover="bigImg6(x)" onmouseout="normalImg6(this)">
+            <div class="servicetext" id="serviceSection6">
+                <h2>App Design</h2>
+                <p>Our experts cover an entire cycle of mobile app development, including business analysis, UX/UI
+                    design and development of your mobile application From ideation to final polish, our UX/UI design
+                    process.</p>
+                <img src="apd.jpeg" alt="" class="serviceImg" id="serviceImg6">
+            </div>
+        </div>
+    </div>
+    <div id="callSection1" onmouseover="numAdder()">
+        <h2>CALL TO ACTION</h2>
+        <p>Please contact us for any queries.</p>
+        <div>
+            <div class="callNumber">Call us:-1234567899</div>
+            <div class="callNumber">Call us:-1234567899</div>
+            <div class="callNumber">Call us:-9987654321</div>
+        </div>
+    </div>
+    <div id="callSection2" onmouseover="numAdder()"><!--  onmouseout="numRemover -->
+        <div class="callicons">
+            <div>
+                <p><i class="fa-solid fa-user"></i></p>
+                <h1 id="num2">00</h1>
+                <!-- <input type="text" value="0" class="num" id="num2"> -->
+                <span>Our Staffs</span>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-user-group"></i></p>
+                <h1 id="num1">0000</h1>
+                <!-- <input type="text" value="0" class="num" id="num1"> -->
+                <span>Our Clients</span>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-check"></i></p>
+                <h1 id="num3">0000</h1>
+                <!-- <input type="text" value="0" class="num" id="num3"> -->
+                <span>Completed Projects</span>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-arrow-trend-up"></i></p>
+                <h1>24*7</h1><br>
+                <!-- <input type="text" value="24*7" class="num" id="num4"> -->
+                <span>Support</span>
+            </div>
+        </div>
+    </div>
+
+    <h1 onmouseover="numAdder()">Reviews</h1>
+    <div class="slideSection">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://namratauniversal.com/img/review/suraj.jpg" alt="img">
+            <div class="text">
+                <h2>SURAJ</h2>
+                <p>HUMAN</p>
+                <P>
+                    Namrata universal are the best website creater , I have ever and I would suggest more n more people
+                    for website designing
+                </P>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://namratauniversal.com/img/review/Anupam%20Kumar.jpg" alt="img">
+            <div class="text">
+                <h2>Anupam Kumar</h2>
+                <p>BUSINESSMAN</p>
+                <P>
+                    As a business owner, My goal was to find someone to create a web site that was contemporary, easy to
+                    use and attractive. I wanted to add intuitive features that would allow My customers to easily find
+                    us and
+                    learn about our services.
+                </P>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://namratauniversal.com/img/review/Amit%20Tamang.jpg" alt="img">
+            <div class="text">
+                <h2>Amit Tamang</h2>
+                <p>BUSINESSMAN</p>
+                <P>
+                    Guys, this is best company for website designing. I am very grateful towards Namrata universal for
+                    your good work and support.. Thank you mam.
+                </P>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div style="text-align:center">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+    </div>
+    <h1 id="mobileres2">Clients</h1>
+    <div class="bigsection" onmouseover="remover1(this)" onmouseout="remover2(this)">
+        <div class="imgsection">
+            <img src="client-1.jpg" alt="" class="image">
+        </div>
+        <div class="imgsection">
+            <img src="client-10.png" alt="" class="image">
+        </div>
+        <div class="imgsection">
+            <img src="client-23.png" alt="" class="image">
+        </div>
+        <div class="imgsection">
+            <img src="client-1.jpg" alt="" class="image">
+        </div>
+        <div class="imgsection">
+            <img src="client-10.png" alt="" class="image">
+        </div>
+        <div class="imgsection">
+            <img src="client-23.png" alt="" class="image">
+        </div>
+        <div class="imgsection">
+            <img src="client-1.jpg" alt="" class="image">
+        </div>
+        <div class="imgsection">
+            <img src="client-10.png" alt="" class="image">
+        </div>
+        <div class="imgsection">
+            <img src="client-23.png" alt="" class="image">
+        </div>
+        <div class="imgsection">
+            <img src="client-1.jpg" alt="" class="image">
+        </div>
+        <div class="imgsection">
+            <img src="client-10.png" alt="" class="image">
+        </div>
+        <div class="imgsection">
+            <img src="client-23.png" alt="" class="image">
+        </div>
+    </div>
+
+    <footer onmouseover="remover1(this)" onmouseout="remover2(this)">
+        <div class="footSection1">
+
+            <div class="footBox1">
+                <h2>branches in India</h2>
+                <p>property in New Delhi, Property in Mumbai, Property in Chennai, Property in Pune, Property in Noida,
+                    Property in Gurgaon, Property in Bangalore, Property in Ahmedabad</p>
+                <h2>New Projects in India</h2>
+                <p>New Projects in New Delhi, New Projects in Mumbai, New Projects in Chennai, New Projects in Pune, New
+                    Projects in Noida, New Projects in Gurgaon, New Projects in Bangalore, New Projects in Ahmedabad</p>
+            </div>
+            <div class="footBox2">
+                <ul>
+                    <li id="logo">
+                        <img src="mainlogo.png" alt="">
+                        <!-- <h1 id="lg1">Namrata </h1>
+                        <h1 id="lg2"> Univarsal</h1> -->
+                    </li>
+                    <li>Home</li>
+                    <li>Internship</li>
+                    <li>
+                        <select name="training" id="training">
+                            <option value="1">Training & Development</option>
+                            <option value="2">Technology</option>
+                            <option value="3">Digital marketing</option>
+                            <option value="4">SEO</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select name="training" id="training">
+                            <option value="1">Pages</option>
+                            <option value="2">Services</option>
+                            <option value="3">Portfolio</option>
+                            <option value="4">Pricing</option>
+                            <option value="4">Team Members</option>
+                            <option value="4">Reviews</option>
+                            <option value="4">Clients</option>
+                            <option value="4">Skills</option>
+                        </select>
+                    </li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Blog</li>
+                    <li>Pay</li>
+                    <li>Development</li>
+                </ul>
+            </div>
+            <div class="footBox3">
+                <h2>Contact Us</h2>
+                <p>1234567899, 9876543219</p>
+                <h2>Head Office:</h2>
+                <p>3C, A1 Sector 10, Noida
+                    Uttar Pradesh, India</p>
+                <h2>New Branch Office :</h2>
+                <p>2nd floor plot no.-64 Block-F, Sector-8 Noida
+                    Uttar Pradesh, India</p>
+                <h2>Branch Office :</h2>
+                <p>A-50, Shalimar Garden Main Near
+                    New Seemapuri Depot Delhi NCR</p>
+                <h4>phone: 1234567899, 9987654321</h4>
+            </div>
+        </div>
+        <div class="footSection2">
+            <div id="footBox1">
+                <h2>Important Links</h2>
+                <p>Training</p>
+                <h2>Head Office:</h2>
+                <p>3C, A1 Sector 10, Noida
+                    Uttar Pradesh, India</p>
+                <h2>New Branch Office :</h2>
+                <p>2nd floor plot no.-64 Block-F, Sector-8 Noida
+                    Uttar Pradesh, India</p>
+                <h2>Branch Office :</h2>
+                <p>A-50, Shalimar Garden Main Near
+                    New Seemapuri Depot Delhi NCR</p>
+                <h4>phone: 1234567899, 9987654321</h4>
+            </div>
+            <div id="footBox3">
+                <h2>Contact Us</h2>
+                <p>1234567899, 9876543219</p>
+                <h2>Head Office:</h2>
+                <p>3C, A1 Sector 10, Noida
+                    Uttar Pradesh, India</p>
+                <h2>New Branch Office :</h2>
+                <p>2nd floor plot no.-64 Block-F, Sector-8 Noida
+                    Uttar Pradesh, India</p>
+                <h2>Branch Office :</h2>
+                <p>A-50, Shalimar Garden Main Near
+                    New Seemapuri Depot Delhi NCR</p>
+                <h4>phone: 1234567899, 9987654321</h4>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js">
+    </script>
+
+</body>
+
+</html>
